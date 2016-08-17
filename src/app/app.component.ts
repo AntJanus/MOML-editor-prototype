@@ -5,13 +5,7 @@ import { SubComponent } from './components/subcomponent/subcomponent.component';
 @Component({
   selector: 'my-app',
   providers: [MyService],
-  template: `
-    <ul>
-      <li>{{ appStatus }}</li>
-      <li>{{ serviceStatus }}</li>
-      <sub-component></sub-component>
-    </ul>
-  `,
+  templateUrl: '/app/app.template.html',
   directives: [SubComponent]
 })
 export class MyAppComponent {
